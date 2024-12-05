@@ -21,3 +21,8 @@ runs:
         echo "num-args=`${{ github.action_path }}/count-args.sh
         {{ inputs.arguments-to-count }}`" >> $GITHUB_OUTPUT
       shell: bash
+# runs:
+#   using: 'docker'
+#   image: 'Dockerfile'
+#   args:
+#     - ${{ inputs.arguments-to-count }}
